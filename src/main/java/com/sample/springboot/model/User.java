@@ -35,9 +35,19 @@ public class User {
         return address;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public void setAddress(Address address) {
         this.address = address;
     }
+
+
 
     @Override
     public String toString() {
