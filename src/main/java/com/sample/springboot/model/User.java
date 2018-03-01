@@ -1,11 +1,13 @@
 package com.sample.springboot.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 /**
  * Created by PRGA on 2/26/2018.
  */
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 @Document(indexName = "prga", type = "users")
 public class User {
 
