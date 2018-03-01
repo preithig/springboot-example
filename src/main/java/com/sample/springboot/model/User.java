@@ -10,7 +10,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class User {
 
     @Id
-    private int id;
+    private String id;
     private String name;
     private int age;
     private Address address;
